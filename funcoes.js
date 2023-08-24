@@ -96,8 +96,18 @@ function exemplo7(){
     let vetor = []
     entrada(vetor, 3)
     console.log(vetor)
+    calculaSomaPares(vetor)
 }
 
+function calculaSomaPares(vetor){
+    let soma = 0
+    for(let i = 0; i < vetor.length; i++){
+        if (vetor[i] % 2 == 0){
+            soma = soma + vetor[i]
+        }
+    }
+    console.log(`A soma dos pares é ${soma}`)
+}
 function entrada(vetor, n){
     for(let i = 0; i < n; i++){
         vetor.push(Number(prompt(`Informe um número`)))
