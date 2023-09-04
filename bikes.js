@@ -82,7 +82,7 @@ function calculaBikeMaiorQuadro(bikes){
     }
     else {
         let maiorQuadro = bikes[0]
-        for(let i=1;i<10;i++){
+        for(let i=1;i<bikes.length;i++){
             if (bikes[i].quadro > maiorQuadro.quadro){
                 maiorQuadro = bikes[i]
             }
