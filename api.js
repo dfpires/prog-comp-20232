@@ -14,4 +14,5 @@ let buscarCep = async () => {
     // preenche os campos do formulário com os dados do JSON
     document.getElementById("logradouro").value = respostaJSON.logradouro;
     document.getElementById("bairro").value = respostaJSON.bairro;
+    document.getElementById("cidade").value = respostaJSON.localidade
 }
