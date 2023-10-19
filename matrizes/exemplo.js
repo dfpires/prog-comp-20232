@@ -14,10 +14,17 @@ function somaDiagonalPrincipal(matriz){
     }
     alert(`A soma da diagonal principal é ${soma}`)
 }
-
+function somaDiagonalSecundaria(matriz){
+    let soma = 0
+    for(let i=0;i<4;i++){
+        soma = soma + matriz[i][3-i]
+    }
+    return soma
+}
 function principal(){
     let matriz = []
     entradaDados(matriz)
     somaDiagonalPrincipal(matriz)
+    somaDiagonalSecundaria(matriz)
 }
 principal()
